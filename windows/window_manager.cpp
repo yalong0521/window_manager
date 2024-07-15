@@ -342,10 +342,6 @@ bool WindowManager::IsMinimized() {
 }
 
 void WindowManager::Minimize() {
-  if (IsFullScreen()) {  // Like chromium, we don't want to minimize fullscreen
-                         // windows
-    return;
-  }
   HWND mainWindow = GetMainWindow();
   WINDOWPLACEMENT windowPlacement;
   GetWindowPlacement(mainWindow, &windowPlacement);
