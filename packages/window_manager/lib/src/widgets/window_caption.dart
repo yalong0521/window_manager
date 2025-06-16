@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'package:window_manager/src/widgets/drag_to_move_area.dart';
 import 'package:window_manager/src/widgets/window_caption_button.dart';
 import 'package:window_manager/src/window_listener.dart';
@@ -74,7 +73,7 @@ class _WindowCaptionState extends State<WindowCaption> with WindowListener {
                       child: DefaultTextStyle(
                         style: TextStyle(
                           color: widget.brightness == Brightness.light
-                              ? Colors.black.withValues(alpha: 0.8956)
+                              ? Colors.black.withOpacity(0.8956)
                               : Colors.white,
                           fontSize: 14,
                         ),

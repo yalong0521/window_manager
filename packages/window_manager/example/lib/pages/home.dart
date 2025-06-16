@@ -966,7 +966,7 @@ class _HomePageState extends State<HomePage> with TrayListener, WindowListener {
                     margin: const EdgeInsets.all(0),
                     width: double.infinity,
                     height: 54,
-                    color: Colors.grey.withValues(alpha: 0.3),
+                    color: Colors.grey.withOpacity(0.3),
                     child: const Center(
                       child: Text('DragToMoveArea'),
                     ),
@@ -978,11 +978,11 @@ class _HomePageState extends State<HomePage> with TrayListener, WindowListener {
                     margin: const EdgeInsets.all(20),
                     child: DragToResizeArea(
                       resizeEdgeSize: 6,
-                      resizeEdgeColor: Colors.red.withValues(alpha: 0.2),
+                      resizeEdgeColor: Colors.red.withOpacity(0.2),
                       child: Container(
                         width: double.infinity,
                         height: double.infinity,
-                        color: Colors.grey.withValues(alpha: 0.3),
+                        color: Colors.grey.withOpacity(0.3),
                         child: Center(
                           child: GestureDetector(
                             child: const Text('DragToResizeArea'),
